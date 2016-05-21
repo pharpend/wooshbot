@@ -17,9 +17,23 @@ extra-source-files:
   LICENSE
   README.md
 
-executable wooshbot
-  hs-source-dirs:   src
+source-repository head
+  type:     git
+  location: https://github.com/pharpend/wooshbot
+
+library
+  hs-source-dirs:   lib
   default-language: Haskell2010
+  ghc-options:      -Wall
+  exposed-modules:
+    Wooshbot
+  build-depends:
+      base ==4.8.*
+
+executable wooshbot
+  hs-source-dirs:   bin
   main-is:          Main.hs
+  default-language: Haskell2010
+  ghc-options:      -Wall -threaded
   build-depends:
       base ==4.8.*
