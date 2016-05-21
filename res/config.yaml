@@ -1,0 +1,19 @@
+# The attribute names in this file are weird because the author of the program
+# is lazy and has the program automatically generate the names instead of
+# writing them by hand.
+
+wbHost: irc.freenode.net
+wbPort: 6697
+wbTls: true
+wbAutojoin:
+  - "##test"
+wbNick: wooshbot-example
+wbPass: wooshbot-example
+
+# You can optionally specify a log file with
+#
+# pcLogFile: /path/to/log/file
+#
+# By default, wooshbot puts logs in ~/.local/share/wooshbot, and organizes them
+# so they won't collide.
+
